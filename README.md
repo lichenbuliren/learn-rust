@@ -5,6 +5,32 @@
 - 外部包：`crate`
 - Cargo.toml 与 Cargo.lock：类似于 package.json 与 package-lock.json
 
+## 基础语法
+
+### 变量声明
+
+``` rust
+let foo = bar; // 变量不可变
+let mut bar = 5;; // 变量可变
+```
+
+## println
+
+``` rust
+let x = 5;
+let y = 10;
+// {} 为占位符
+println!("x = {}, y = {}", x, y);
+```
+
+## 语言特性
+
+### 基础库
+
+``` rust
+use std::io; // io 标准库，输入/输出
+```
+
 ## 编译构建
 
 ``` bash
