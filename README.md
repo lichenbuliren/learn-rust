@@ -9,14 +9,14 @@
 
 ### 变量声明
 
-``` rust
+```rust
 let foo = bar; // 变量不可变
 let mut bar = 5;; // 变量可变
 ```
 
 ## println
 
-``` rust
+```rust
 let x = 5;
 let y = 10;
 // {} 为占位符
@@ -27,7 +27,7 @@ println!("x = {}, y = {}", x, y);
 
 **Rust 允许一个新值来隐藏之前值**
 
-``` rust
+```rust
 let mut guess = String::new();
 
 io::stdin().read_line(&mut guess)
@@ -37,17 +37,16 @@ let guess: u32 = guess.trim().parse()
     .expect("Please type a number!");
 ```
 
-
 ### 基础库
 
-``` rust
+```rust
 use std::io; // io 标准库，输入/输出
 use std::cmp::Ordering; // 逻辑判断大小
 ```
 
 ## 编译构建
 
-``` bash
+```bash
 # 构建
 cargo build
 
@@ -62,3 +61,15 @@ cargo check
 
 - 调试阶段：`target/debug/`
 - 发布构建：`target/release/`
+
+## VScode 问题
+
+### 手动配置 rustup 本地路径
+
+在 vscode 配置中，新增一个 rust 本地路径
+
+```json
+{
+  "rust-client.rustupPath": "/Users/weirufeng/.cargo/bin/rustup"
+}
+```
