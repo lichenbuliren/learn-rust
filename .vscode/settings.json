@@ -1,0 +1,7 @@
+{
+  "editor.formatOnSave": true,
+  "rust-client.rustupPath": "/Users/weirufeng/.cargo/bin/rustup",
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust"
+  }
+}

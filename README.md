@@ -25,10 +25,24 @@ println!("x = {}, y = {}", x, y);
 
 ## 语言特性
 
+**Rust 允许一个新值来隐藏之前值**
+
+``` rust
+let mut guess = String::new();
+
+io::stdin().read_line(&mut guess)
+    .expect("Failed to read line");
+
+let guess: u32 = guess.trim().parse()
+    .expect("Please type a number!");
+```
+
+
 ### 基础库
 
 ``` rust
 use std::io; // io 标准库，输入/输出
+use std::cmp::Ordering; // 逻辑判断大小
 ```
 
 ## 编译构建
